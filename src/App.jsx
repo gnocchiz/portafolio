@@ -1,16 +1,13 @@
 import ReactDOM from 'react-dom';
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import {Home, About, Projects, Contact } from './pages'
-
+import { Home, About, Projects, Contact } from './pages'
 
 const App = () => {
   return (
     <main>
         <Router>
-            <Navbar 
-            
-            />
+            <Navbar />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
@@ -22,4 +19,10 @@ const App = () => {
   )
 }
 
-export default App
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root')
+);
+
