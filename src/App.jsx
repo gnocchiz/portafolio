@@ -6,7 +6,7 @@ import {Home, About, Projects, Contact } from './pages'
 const App = () => {
   return (
     <main>
-        <Router basename='/portafolio'>
+        <Router>
             <Navbar 
             
             />
